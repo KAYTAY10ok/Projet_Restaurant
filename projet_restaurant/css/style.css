@@ -18,10 +18,20 @@ a{
     height: 260px;
     width: 200px;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px;
+    box-shadow: 0px 0px 5px black;
     transition: 3ms;
 }
-.accueil .item_menu:hover{
+.accueil .item_menu img:hover{
+    transform: scale(1.05);
+}
+.accueil .item_reservation img{
+    height: 260px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    transition: 3ms;
+}
+.accueil .item_reservation img:hover{
     transform: scale(1.05);
 }
 .accueil footer{
