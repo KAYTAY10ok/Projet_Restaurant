@@ -1,150 +1,178 @@
+
 /*Pour toute les page*/
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 /*Page accueil*/
 body{
-    background-image: url(../images/image-degrade-beige.jpg);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  background-image: url(../images/image-degrade-beige.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .accueil header{
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .accueil .logo{
-    height: 230px;
-    display: flex;
-    justify-content: left;
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    text-shadow: 0.02em 0.02em 0.2em #000000;
+  height: 230px;
+  display: flex;
+  justify-content: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  text-shadow: 0.02em 0.02em 0.2em #000000;
 }
 .accueil .item img{
-    height: 360px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px black;
-    transition: 0.3s; 
+  height: 360px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px black;
+  transition: 0.3s; 
 }
 .accueil .item img:hover{
-    transform: scale(1.05);
-    
+  transform: scale(1.05);
 }
 .accueil article{
-    text-align: center;
+  text-align: center;
 }
 .accueil h1{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    text-align: center;
-    color: #000000;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  color: #000000;
 }
 .accueil .item{
-    list-style: none;
-    margin: 5px;
-    padding: 2px;
-    display: inline-block;
-    justify-content: space-between;
-    gap: 20rem;
+  list-style: none;
+  margin: 5px;
+  padding: 2px;
+  display: inline-block;
+  justify-content: space-between;
+  gap: 20rem;
 }
 footer{
-    text-shadow: 0.1em 0.1em 0.2em black;
-    margin-top: auto;
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 2px solid black;
 }
 
+ul{
+  list-style: none;
+}
 
 /*Page Menu*/
-.menu .logo{
-    height: 230px;
-    display: flex;
-    justify-content: left;
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    text-shadow: 0.02em 0.02em 0.2em #000000;
+.logo{
+  height: 230px;
+  display: flex;
+  justify-content: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  text-shadow: 0.02em 0.02em 0.2em #636363;
 }
 .menu h1{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
 }
-.menu header{
-    border-bottom: 2px solid black;
+header{
+  border-bottom: 2px solid black;
 }
-.menu .item{
-    list-style: none;
-    margin: 5px;
-    padding: 2px;
-    display: inline-block;
-    justify-content: space-between;
-    gap: 20rem;
+.item{
+  list-style: none;
+  margin: 5px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20rem;
 }
 .menu .p{
-    font-size: 19px;
-    font-family: 'Great Vibes', cursive;
+  display: flex;
+  gap: 10rem;
+  margin: 40px;
+  
+}
+.menu .paragraphe{
+  color: #7C7c7c;
+  font: 19px Arial, sans-serif;
+  margin: 0px 0px 10px;
 }
 .menu .item img{
-    height: 360px;
-    width: 300px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px black;
-    transition: 0.3s; 
+  height: 360px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px black;
+  transition: 0.3s; 
+  flex-wrap: wrap;
 }
 .menu .menu{
-    list-style: none;
-    margin: 5px;
-    padding: 2px;
-    display: flex;
-    justify-content: space-between;
+  list-style: none;
+  margin: 5px;
+  padding: 2px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
 /*Page avis*/
 
 .avis header{
-    border-bottom: 2px solid black;
+  border-bottom: 2px solid black;
 }
 .avis .logo{
-    height: 230px;
-    display: flex;
-    justify-content: left;
-    font-family: 'Playfair Display', serif;
-    font-size: 35px;
-    text-shadow: 0.02em 0.02em 0.2em #000000;
+  height: 230px;
+  display: flex;
+  justify-content: left;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  text-shadow: 0.02em 0.02em 0.2em #000000;
 }
 .avis h1{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    text-align: center;
-    color: #000000;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  color: #000000;
 }
 
 
-/*              burger                   */
+/*page service*/
 
-
-
-
-
-.accueil .menu-btn {
-  position: fixed;   /* le fixe sur la page pour qu'il ne soit jamais caché */
-  top: 20px;         /* décale depuis le haut */
-  right: 30px;       /* décale depuis la droite */
-  z-index: 500;      /* très au-dessus de tout (menu + overlay) */
+.service .logo{
+  display: flex;
+  justify-content: space-between;
+}
+.service .reglement{
+  background-color: #ffffff;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 15px;
+  border-left: 5px solid darkgoldenrod;
+  display: inline-block;
+  box-shadow: 2px 4px 10px;
 }
 
-/* Burger */
+
+/*               burger                   */
+
+/* ----- POSITION DU BOUTON BURGER ----- */
 .menu-btn {
-  display: block; /* toujours visible */
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  z-index: 500;
+}
+/* ----- BOUTON BURGER ----- */
+.menu-btn {
+  display: block;
   width: 35px;
   height: 30px;
   cursor: pointer;
   position: relative;
-  margin: 20px;
 }
 
 .menu-btn__burger,
@@ -154,7 +182,7 @@ footer{
   position: absolute;
   width: 100%;
   height: 5px;
-  background-color: #fff;
+  background-color: #6e4d4d;
   border-radius: 5px;
   transition: all 0.4s ease;
 }
@@ -167,7 +195,7 @@ footer{
   top: -12px;
 }
 
-/* Animation burger -> croix */
+/* ----- ANIMATION BURGER → CROIX ----- */
 .menu-btn.open .menu-btn__burger {
   background: transparent;
 }
@@ -175,38 +203,43 @@ footer{
 .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg);
   top: 0;
-  background-color: rgb(255, 0, 0);
+  background-color: #ffffff;
 }
 
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
   top: 0;
-  background-color: #111;
+  background-color: #ffffff;
 }
+
+/* ----- LIENS DU MENU ----- */
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
 }
-/*Overlay */
+
+/* ----- MENU LATÉRAL (fermé par défaut) ----- */
 .nav-links {
   position: fixed;
-  height: 250px;
-  width: 85vw;
+  top: 60px;
+  right: 0;
+  height: 85vh;
+  width: 250px;
   background-color: #222;
-  top: -40px;     
-  border-radius: 0 0 20px 20px;
-  gap: 8rem;
-  /*transform: translateY(-100%);  
-  transition: transform 0.3s;*/
+  border-radius: 20px 0 0 20px;
+  transform: translateX(100%);  /* caché par défaut */
+  transition: transform 0.3s ease;
+  padding: 20px;
   z-index: 300;
 }
 
+/* ----- MENU OUVERT ----- */
 .nav-links.show {
   transform: translateX(0);
-  left: 10rem;
 }
 
+/* ----- OVERLAY FOND NOIR ----- */
 .overlay {
   position: fixed;
   top: 0;
@@ -217,7 +250,7 @@ footer{
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  z-index: 200;         /* en dessous du menu et du burger */
+  z-index: 200;
 }
 
 .overlay.active {
