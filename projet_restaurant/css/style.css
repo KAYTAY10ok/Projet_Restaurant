@@ -16,10 +16,15 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
+.vide{
+  display: flex;
+  height: 230px;
+  width: 230.45px;
+}
 /*Page accueil*/
 .accueil h1{
   color: #ffffff;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: EuclidFlex2-regular, sans-serif;
 }
 .accueil header{
   border-bottom: 2px solid black;
@@ -30,13 +35,18 @@ body{
   flex-direction: column;
 }
 .menu-principal{
-  align-items: start;
-  height: 230px;
+  align-items: center;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   font-family: 'Playfair Display', serif;
   font-size: 35px;
   text-shadow: 0.02em 0.02em 0.2em #000000;
+}
+.menu-principal:hover{
+  transition: 1s;
+  background-color: #ffffff;
+  color: #000000;
 }
 .accueil .item img{
   height: 360px;
@@ -151,21 +161,11 @@ header{
 
 /*Page avis*/
 
-.avis header{
-  border-bottom: 2px solid black;
-}
 .avis main{
   display: flex;
   justify-content: space-around;
 }
-.avis .logo{
-  height: 230px;
-  display: flex;
-  justify-content: left;
-  font-family: 'Playfair Display', serif;
-  font-size: 35px;
-  text-shadow: 0.02em 0.02em 0.2em #000000;
-}
+
 .avis article{
   display: flex;
   flex-direction: column;
@@ -200,7 +200,10 @@ header{
 
 
 /*page service*/
-
+.service main{
+  display: flex;
+  justify-content: space-around;
+}
 .service .logo{
   display: flex;
   justify-content: space-between;
@@ -211,17 +214,47 @@ header{
   margin: 10px;
   border-radius: 15px;
   border-left: 5px solid darkgoldenrod;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   box-shadow: 2px 4px 10px;
 }
-.troll *{
-  margin: 0;
-  padding: 0;
-}
-.troll{
+
+/*page entrée*/
+
+.entree main{
   display: flex;
+  justify-content: space-around;
+}
+.entree article{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  background-color: white;
+  border-left: 5px solid darkgoldenrod;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.entree h2{
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.entree p{
+  border-left: 4px solid rgb(88, 88, 151);
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+}
+.entree .sous-titre{
+  display: flex;
+  gap: 20px;
   justify-content: center;
-  align-items: center;
+}
+.entree .paragraphe{
+  display: flex;
+  flex-direction: column;
 }
 
 /*               burger                   */
@@ -240,7 +273,7 @@ header{
   height: 30px;
   cursor: pointer;
   position: relative;
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .menu-btn__burger,
@@ -329,4 +362,15 @@ header{
 .overlay.active {
   opacity: 1;
   pointer-events: auto;
+}
+
+/*troll*/
+.troll *{
+  margin: 0;
+  padding: 0;
+}
+.troll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
