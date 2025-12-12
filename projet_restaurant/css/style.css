@@ -16,16 +16,41 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
+
+h1{
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  color: #000000;
+  align-items: center;
+}
+
+footer{
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-top: 2px solid black;
+}
+
+ul{
+  list-style: none;
+}
 .vide{
   display: flex;
   height: 230px;
   width: 230.45px;
 }
+
+
 /*Page accueil*/
 .accueil h1{
   color: #ffffff;
   font-family: EuclidFlex2-regular, sans-serif;
 }
+
 .accueil header{
   border-bottom: 2px solid black;
   background-image: url(../images/restauIn.png);
@@ -34,6 +59,7 @@ body{
   display: flex;
   flex-direction: column;
 }
+
 .menu-principal{
   align-items: center;
   height: 90px;
@@ -43,11 +69,12 @@ body{
   font-size: 35px;
   text-shadow: 0.02em 0.02em 0.2em #000000;
 }
+
 .menu-principal:hover{
-  transition: 1s;
-  background-color: #ffffff;
-  color: #000000;
+  transition: 0.5s;
+  background-color: #000000;
 }
+
 .accueil .item img{
   height: 360px;
   width: 300px;
@@ -61,14 +88,7 @@ body{
 .accueil article{
   text-align: center;
 }
-h1{
-  display: flex;
-  justify-content: center;
-  flex: 1;
-  text-align: center;
-  color: #000000;
-  align-items: center;
-}
+
 .accueil .item{
   list-style: none;
   margin: 5px;
@@ -77,18 +97,7 @@ h1{
   justify-content: space-between;
   gap: 20rem;
 }
-footer{
-  margin-top: auto;
-  text-align: center;
-  margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
-  border-top: 2px solid black;
-}
 
-ul{
-  list-style: none;
-}
 
 /*Page Menu*/
 .logo{
@@ -160,6 +169,11 @@ header{
 
 
 /*Page avis*/
+.avis header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
 .avis main{
   display: flex;
@@ -170,6 +184,10 @@ header{
   display: flex;
   flex-direction: column;
   max-width: 800px;
+}
+.avis h1{
+  display: flex;
+  justify-content: end;
 }
 .avis h2{
   background-color: white;
@@ -197,35 +215,147 @@ header{
 .avis strong{
   color: darkgoldenrod;
 }
+.avis .logo{
+  max-width: 230px;
+  display: flex;
+  margin-right: auto;
+}
+
+
+/*reservation*/
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #665;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+.reservation li:hover{
+  background-color: #ffffff;
+  color: black;
+}
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+
+/* Highlight the "current" day */
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white 
+}
 
 
 /*page service*/
 .service main{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+}
+.service .reglement2{
+  display: flex;
+  justify-content: center;
 }
 .service .logo{
   display: flex;
   justify-content: space-between;
 }
 .service .reglement{
+  gap: 20px;
   background-color: #ffffff;
   padding: 4px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 15px;
   border-left: 5px solid darkgoldenrod;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 4px 10px;
+  max-width: fit-content;
+}
+.service .bienManger{
+  background-color: #ffffff;
+  padding: 4px;
+  margin: 20px;
+  border-radius: 15px;
+  border-left: 5px solid darkgoldenrod;
+  box-shadow: 2px 4px 10px;
+  max-width: fit-content;
+  font-size: 35px;
+}
+.bienManger2{
+  display: flex;
+  justify-content: center;
+}
+.imgBienManger{
+  height: 900px;
+  width: 650px;
+}
+.imageBienManger{
+  display: flex;
+  justify-content: center;
 }
 
-/*page entrée*/
 
-.entree main{
+/*Les pages entree, plat, dessert et vin*/
+
+.pageMenu main{
   display: flex;
   justify-content: space-around;
 }
-.entree article{
+.pageMenu article{
   display: flex;
   flex-direction: column;
   max-width: 800px;
@@ -233,13 +363,14 @@ header{
   border-left: 5px solid darkgoldenrod;
   border-radius: 15px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
-.entree h2{
+.pageMenu h2{
   margin-top: 10px;
   padding: 10px;
   border-radius: 15px;
 }
-.entree p{
+.pageMenu p{
   border-left: 4px solid rgb(88, 88, 151);
   margin-left: 10px;
   margin-top: 10px;
@@ -247,15 +378,17 @@ header{
   padding: 15px;
   text-align: center;
 }
-.entree .sous-titre{
+.pageMenu .sous-titre{
   display: flex;
   gap: 20px;
   justify-content: center;
 }
-.entree .paragraphe{
+.pageMenu .paragraphe{
   display: flex;
   flex-direction: column;
 }
+
+
 
 /*               burger                   */
 
